@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Plataforma da ONG — missão, visão, valores, projetos e contato" />
+  <title>ONG Exemplo — Início</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="ONG Exemplo - Página Inicial">
+        <img src="images/logo.svg" alt="Logotipo ONG Exemplo" />
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainMenu">Menu</button>
+        <ul id="mainMenu" class="menu" hidden>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">ONG Exemplo — Transformando Vidas</h1>
+      <p class="lead">Nossa missão é promover inclusão social por meio de projetos comunitários, educação e cultura.</p>
+      <img src="images/hero.svg" alt="Voluntários em ação" class="responsive-img" />
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Missão, Visão e Valores</h2>
+      <p><strong>Missão:</strong> Atuar na melhoria de qualidade de vida de comunidades vulneráveis.</p>
+      <p><strong>Visão:</strong> Uma sociedade justa com oportunidades para todos.</p>
+      <p><strong>Valores:</strong> Transparência, Empatia, Sustentabilidade e Colaboração.</p>
+    </section>
+
+    <section class="highlights" aria-labelledby="highlights-title">
+      <h2 id="highlights-title">Nossas Conquistas</h2>
+      <ul>
+        <li>+500 voluntários engajados</li>
+        <li>Mais de 10 projetos ativos</li>
+        <li>Relatórios de transparência disponíveis</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contato</h2>
+      <address>
+        <p>Rua Exemplo, 123 — Centro, Cidade - Estado</p>
+        <p>Telefone: <a href="tel:+5511999998888">+55 (11) 99999-8888</a></p>
+        <p>Email: <a href="mailto:contato@onexemplo.org">contato@onexemplo.org</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> ONG Exemplo — Todos os direitos reservados.</p>
+      <nav aria-label="Redes sociais">
+        <ul class="socials">
+          <li><a href="#" aria-label="Compartilhar no Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Compartilhar no Instagram">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Projetos sociais — voluntariado e doações" />
+  <title>Projetos — ONG Exemplo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="ONG Exemplo - Página Inicial">
+        <img src="images/logo.svg" alt="Logotipo ONG Exemplo" />
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Projetos Sociais</h1>
+    <p>Conheça os nossos projetos, oportunidades de voluntariado e como doar.</p>
+
+    <section class="project-list" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projetos em destaque</h2>
+
+      <article class="project" aria-labelledby="proj1-title">
+        <h3 id="proj1-title">Projeto Educação</h3>
+        <img src="images/project-educacao.svg" alt="Projeto Educação — Crianças em sala" class="responsive-img" />
+        <p>Oficinas de reforço escolar e formação de professores voluntários.</p>
+        <p><strong>Como ajudar:</strong> Doe materiais escolares ou torne-se voluntário.</p>
+        <a href="cadastro.html#voluntario" class="btn">Quero ser voluntário</a>
+      </article>
+
+      <article class="project" aria-labelledby="proj2-title">
+        <h3 id="proj2-title">Projeto Saúde Comunitária</h3>
+        <img src="images/project-saude.svg" alt="Projeto Saúde — Clínica móvel" class="responsive-img" />
+        <p>Atendimentos básicos, campanhas de vacinação e prevenção.</p>
+        <p><strong>Como ajudar:</strong> Contribua financeiramente ou com insumos.</p>
+        <a href="#doar" class="btn">Doar agora</a>
+      </article>
+
+    </section>
+
+    <section class="volunteer" aria-labelledby="vol-title">
+      <h2 id="vol-title">Voluntariado</h2>
+      <p>Passo a passo para se tornar voluntário e seleção.</p>
+    </section>
+
+    <section id="doar" class="donate" aria-labelledby="donate-title">
+      <h2 id="donate-title">Doações</h2>
+      <p>Campanhas ativas e relatórios de uso dos recursos.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; ONG Exemplo</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

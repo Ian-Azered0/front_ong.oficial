@@ -1,0 +1,44 @@
+/* Mobile-first responsive CSS, accessible and semantic */
+:root{
+  --bg:#ffffff;
+  --text:#222222;
+  --accent:#0b6efd;
+  --muted:#6b7280;
+  --maxw:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--maxw);margin:0 auto;padding:1rem;}
+.site-header{border-bottom:1px solid #eee;background:linear-gradient(180deg, #fff, #f9fafb);position:sticky;top:0;z-index:10}
+.site-header .container{display:flex;align-items:center;gap:1rem;justify-content:space-between}
+.logo img{height:48px;width:auto}
+.menu{list-style:none;padding:0;margin:0;display:flex;gap:1rem;align-items:center}
+.menu a{color:var(--text);text-decoration:none}
+.menu-toggle{display:inline-block}
+.hero{padding:1.5rem 0}
+.hero .lead{color:var(--muted)}
+.responsive-img{max-width:100%;height:auto;display:block;margin-top:0.5rem;border-radius:8px}
+h1,h2,h3{margin:0.5rem 0}
+fieldset{border:1px solid #e6e6e6;padding:1rem;margin:1rem 0;border-radius:8px}
+legend{font-weight:600}
+label{display:block;margin-top:0.5rem}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select{
+  width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:6px;margin-top:0.25rem;font-size:1rem
+}
+.checkboxes label{display:inline-block;margin-right:1rem}
+.form-actions{display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem}
+.btn{background:var(--accent);color:white;padding:0.6rem 0.9rem;border-radius:8px;border:none;cursor:pointer}
+.btn-ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.site-footer{border-top:1px solid #eee;padding:1rem 0;margin-top:2rem}
+@media(min-width:700px){
+  .menu-toggle{display:none}
+  .menu[hidden]{display:flex !important}
+}
